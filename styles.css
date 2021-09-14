@@ -1,0 +1,11 @@
+#bg {
+  position: centre; 	
+  /* Preserve aspet ratio */
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+}
+
+body{
+  background-color: bisque;
+}
