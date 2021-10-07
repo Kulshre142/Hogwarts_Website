@@ -30,15 +30,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url('./images/bg2.jpg'); 
-  /*background-repeat: no-repeat; */
-  font-family: "Oswald", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-  color: white;
-  /* font-size :  */
-  overflow-x: hidden;
-}
 
 
 /* --------------------------------------------------------Navigation------------------------------------------------------ */
@@ -420,13 +411,7 @@ section #section-head{
   font-family: 'Acme', sans-serif;
 
 }
-.bg-alumni{
-	background-image: url('./images/bgclub3.jpg'); 
-background-repeat: no-repeat;
-margin-left:30px;
-margin-right:30px;
-padding-bottom:40px;
-padding-top:40px;}
+
 	
 .our-team .picture {
   display: inline-block;
@@ -533,16 +518,6 @@ padding-top:40px;}
 	overflow: auto;
 }
 
-
-.counters {
-
-	background-image: url('./images/bgcounter1.png');
-	background-size: 110% 90%;
-	background-repeat: no-repeat;
-	color: white;
-	padding: 100px 120px;
-	
-}
 
 .counters .count-container {
 	display: grid;
@@ -1285,14 +1260,6 @@ padding-top:40px;}
 
 
 /* -----------------------------------------------Section 7 - Newsletter section----------------------------------------- */
-.newsletter{
-    padding : 60px 0px;
-    text-align: center;
-    background-image: url('./images/wallpapers/4.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    /* border-bottom: 5px solid var(--light-gray); */
-}
 .newsletter h1{
     margin-bottom : 20px;
     font-size : 35px;
@@ -1382,32 +1349,7 @@ padding-top:40px;}
 }
 /* --------------------------------------------------Section 9 - Reviews----------------------------------------------------- */
 
-.reviews{
-    margin : 30px 0 100px 0;
-    /* background-color: black;
-    color : white;
-    padding : 50px 0; */
-    background-image: url('./images/background.png');
-}
-.reviews .card{
-    height : auto;
-    width : 300px;
-    text-align: center;
-    /* margin : 10px 30px; */
-    background-color: #F5F5F5;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: transform .2s;
-    cursor: pointer;
-    transform: scale(0.8);
-    color : black;
-}
-.reviews .card:hover{
-    transform: scale(1);
-}
-.reviews .card p{
-    padding : 20px;
-    font-size : 18px;
-}
+
 .rating{
     text-align: center;
     color : var(--yellow);
