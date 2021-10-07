@@ -30,10 +30,20 @@
 
     <!--Animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	
-    <link rel="stylesheet" href="style.css" /> <!--Static style.css-->
+    <link rel="stylesheet" href="style.css" type="text/css"/> <!--Static style.css-->
     <title>Home</title>
 
     <style>
+      body {
+  background-image: url('./images/bg2.jpg'); 
+  /*background-repeat: no-repeat; */
+  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  /* font-size :  */
+  overflow-x: hidden;
+}
+
       .nav-container .hamburger{
   display:none;
   visibility: collapse;
@@ -65,7 +75,59 @@
   color : #DC2626;
 }
 
+.bg-alumni{
+	background-image: url('./images/bgclub3.jpg'); 
+background-repeat: no-repeat;
+margin-left:30px;
+margin-right:30px;
+padding-bottom:40px;
+padding-top:40px;}
 
+.counters {
+
+background-image: url('./images/bgcounter1.png');
+background-size: 110% 90%;
+background-repeat: no-repeat;
+color: white;
+padding: 100px 120px;
+
+}
+.newsletter{
+    padding : 60px 0px;
+    text-align: center;
+    background-image: url('./images/wallpapers/4.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* border-bottom: 5px solid var(--light-gray); */
+}
+
+.reviews{
+    margin : 30px 0 100px 0;
+    /* background-color: black;
+    color : white;
+    padding : 50px 0; */
+    background-image: url('./images/background.png');
+}
+
+.reviews .card{
+    height : auto;
+    width : 300px;
+    text-align: center;
+    /* margin : 10px 30px; */
+    background-color: #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform .2s;
+    cursor: pointer;
+    transform: scale(0.8);
+    color : black;
+}
+.reviews .card:hover{
+    transform: scale(1);
+}
+.reviews .card p{
+    padding : 20px;
+    font-size : 18px;
+}
   @media (max-width: 992px){
 
   /* Nav */
