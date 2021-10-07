@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us</title>
+
+   <!--Css scripts-->
+   
+
+   <!-- Favicon -->
+   <link href="images/favicon.png" rel="icon">
+
+   <!--Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&display=swap" rel="stylesheet">
+	
+	
+   <!--Bootstrap-->
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="contactus.css">   <!-- static file for css-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<style>
+            
+    .navbar{
+      position: fixed;
+      transition: 1s;
+      height: 70px;
+    }
+    
+     .nav-container {
+        position: relative;
+        top: 0;
+        left: -15%;
+        
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+      }
+      .nav-container ul {
+        list-style: none;
+        display: flex;
+      }
+      .nav-container ul li {
+        margin: 0 1.5em;
+        font-size: 15px;
+        border: 2px solid rgba(248, 248, 4, 0);
+        padding: 10px 10px;
+      }
+      .nav-container ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+      .nav-container ul li:hover {
+        border-bottom: 3px solid var(--red);
+        font-size:18px;
+        
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(61, 61, 61);
+        font-size: small;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding-top: 5px;
+        margin-top: 2%;
+        left: 0%;
+        border-radius: 5%;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: #202020;
+        padding: 10px 26px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: rgb(36, 36, 36);
+        color: #ffdf00;
+        border-radius: 5%;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+          body::-webkit-scrollbar-track
+      {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        
+      }
+      body::-webkit-scrollbar
+      {
+        width: 14px;
+      }
+       
+      body::-webkit-scrollbar-thumb
+      {
+        
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+        
+      }
+      @media(max-width: 720px){
+        body{
+          background-size: 100% 100%;
+        }
+        .navbar-collapse{
+        background: #501e27;
+      }
+        .para{
+          min-height: 800px;
+        }
+      }
+    
+            </style>
+
+</head>
+<body>
+    
+    <nav class="nav-container ">
+		  
+    
+        <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+          <div class="navbar-header">
+			
+         <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+           <ul>
+            <a href="#">
+              <img src="./images/logo0.png" style=" height:60px; width: 150px; top: 0%; padding-left: 2px;" >
+              </a>
+            <li class="link"><a href="#home">HOME</a></li>
+            <li class="link"><a href="#projects">NEWS & EVENTS</a></li>
+            <div class="dropdown">
+            <li class="link"><a href="#pricing">DEPARTMENTS</a>
+                <div class="dropdown-content">
+                  <a href="#">Department of Magical Law Enforcement</a>
+                  <a href="#">Department for the Regulation and Control of Magical Creatures</a>
+                  <a href="#">Department of International Magical Cooperation</a>
+                  <a href="#">Department of Magical Transportation</a>
+                  <a href="#">Department of Magical Games and Sports</a>
+                  <a href="#">Department of Mysteries</a>
+                </div>
+              </div> 
+            </li>
+            
+            <li class="link"><a href="#contact">ABOUT US</a></li>
+                  <li class="link"><a href="#contact">CONTACT US</a></li>
+            
+           </ul>
+         </div>
+       </div>
+      </div>
+  
+      <script>
+        window.onscroll = function() {scrollFunction()};
+     
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        
+        document.getElementById("navbar").style.background = "#696969";
+      } else {
+       
+        document.getElementById("navbar").style.background = "none";
+      }
+    }
+    </script>
+      </nav>
+	  
+
+  <div class="container">
+      <div class="contact-section">
+      <h2 class="ct-section-head">
+         CONTACT US
+      </h2>
+       <div class="row contact-fields">
+      <div class="col-md-8 left-form">
+         <form class="card-body" novalidate="" action="" method="" id="bootstrapForm">
+            <div class="form-group">
+              
+			  <label class="sr-only" for="input1">First Name *<abbr class="text-danger" title="This is required">*</abbr></label></label>
+               <input type="text" class="form-control" name="i1" id="input1" placeholder="First Name&nbsp;*" required>
+			   <div class="valid-feedback">It looks good</div>
+			   <div class="invalid-feedback">Please provide a valid Name</div>
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="input2">Last Name *<abbr class="text-danger" title="This is required">*</abbr></label></label>
+               <input type="text" class="form-control" name="i2" id="input2" placeholder="Last Name&nbsp;*" required>
+			   <div class="valid-feedback">It looks good</div>
+			   <div class="invalid-feedback">Please provide a valid Name</div>
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="input3">Email *<abbr class="text-danger" title="This is required">*</abbr></label>
+               <input class="form-control" id="i3" name="input3"  pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Email&nbsp;*"  type="email" required>
+			   <div class="valid-feedback">E-mail looks good</div>
+			   <div class="invalid-feedback">Please provide a valid E-mail</div>
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="input4">Phone *<abbr class="text-danger" title="This is required">*</abbr></label>
+               <input class="form-control" id="i4" name="input4" pattern=".{10}" placeholder="Phone&nbsp;*" type="tel" required>
+			   <div class="valid-feedback">Phone # looks good</div>
+			   <div class="invalid-feedback">Please provide a valid Phone Number.</div>
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="input5">Type your message here</label>
+               <textarea class="form-control" id="i5" name="input5" placeholder="Type your message here&nbsp;" rows="6" ></textarea>
+            </div>
+            <button class="btn btn-accent" type="submit">Submit</button>  
+         </form>
+      </div>
+	
+
+      <div class="col-md-4 contact-info">
+      <div class="phone">
+         <h2>Call</h2>
+         <a href="#">+9123456780</a>
+      </div>
+      <div class="email">
+         <h2>Email</h2>
+         <a href="#">abc@gmail.com</a>
+      </div>
+      <div class="location">
+         <h2>Visit</h2>
+         <p> </br>
+            Hogwarts Castle, </br>
+            Highlands, </br>
+            Scotland, Great Britain
+            <br>  
+            
+            
+      <div id="map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.6999218093138!2d-1.708109084794346!3d55.41558582541756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e00e0ed23bc0d%3A0x8783a98b290f641!2sAlnwick%20Castle!5e0!3m2!1sen!2sin!4v1633087694501!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe><div class="map-responsive">
+    
+      </div>
+      <a class="btn btn-accent" href="" target="_blank"><img src="images/map_master.png" alt="Map Marker">Google Maps</a>
+      
+      
+      <!--
+      Async script executes immediately and must be after any DOM elements used in callback. 
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+        async></script>      
+      -->
+         </p>
+      </div>
+	  </div>
+	   </div>
+	   </div>
+	   </div></br></br></br></br>
+
+  <!--Footer Section--> 
+		
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Hogwarts Castle,
+                                  Scotland, Great Britain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>abc@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./images/logo0.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the Wizarding World.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>                            
+                            <li><a href="#">News & Events</a></li>                          
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">About us</a></li>                          
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <script src="./contactus.js"></script>  <!--Static contactus.js-->
+ <script src="./validation.js"></script> <!--Static script.js-->
+ 
+
+</body>
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+	<!--Google FOnts-->
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&display=swap" rel="stylesheet">
+	
+	<!-- Favicon -->
+	<link href="images/about us.png" rel="icon">
+
+	
+	<style>
+		.a{
+		background-color: #0000009c;
+		}
+		.mbl_logo{
+			display:none;
+		}
+		@media(max-width:400px){
+			.mbl_logo{
+				    display: block;
+
+				    }
+				    .desk_logo{
+				    	display:none;
+				    }
+				}
+				.mtop{
+				margin-top: 30px;
+                margin-bottom: 100px;
+			}
+			
+			.btn
+			{
+				color: #fff;
+                padding: 10px 20px;
+			}
+            .cardimg
+            {
+				width: 90%;
+				margin-top:30px;
+			}
+			@media(max-width: 400px){
+				.cardimg{
+					width: 100%;
+				}
+			}
+			.s{
+				padding-top: 20px;
+                text-transform: uppercase;
+                font-family: prague;
+                letter-spacing: 3px;            
+			}
+			.c
+			{
+				background-image: url("https://www.firstfiddle.in//assets/images/bannerabout.jpg");
+				margin-top:40px;
+				margin-left:0px;
+				margin-bottom:40px; 
+				margin-right:40px;
+				width:100%;
+    		}
+			.why-us h2 {
+    position: relative;
+    margin-bottom: 35px;
+	
+}
+.why-us h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+	
+}
+
+.why-us h4{
+	color: #EAB308;
+}
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+	width:100%;
+	height:120%;
+    background-color: #333;
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.why-us .box:hover {
+	padding: 30px 30px 70px 30px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.why-us .box img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition:all ease 1s; 
+}
+.why-us .box:hover img {
+	opacity: 1;
+}
+.why-us .box span {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: #6b6060;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: normal;
+}
+.why-us .box h4 a {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 0;
+	margin: 20px 0;
+	color: #dadada;
+	text-decoration: none;
+	
+}
+.why-us .box p {
+	color: #aaaaaa;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+.why-us .box:hover span,
+.why-us .box:hover p {
+  	color: #fff;
+}
+
+.why-us .box:hover h4 a{
+	color: #EAB308;
+}
+	.picture-frame {
+	  
+	  width: 70%;
+	  height:80%;
+	  border:black solid 40px;
+	  -webkit-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  margin:40px;
+	}
+	
+	.matte {
+	  background-color:#d3d3d3;
+	  height:110%;
+	  -webkit-box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+	  -moz-box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+	  box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+	}
+
+	.art {
+	  width:90%;
+	  margin:10% 10% 10% 10%;
+	}
+
+
+
+.card {
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 250px;
+  height: 300px;
+  margin-top:70px;
+  max-width: 100%;
+  min-height: 300px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-size: cover;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  opacity: 0.7;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.club-content{
+font-size: 1.2em;
+margin-top:100px;
+line-height:1;
+margin-bottom: 1.3em;
+  line-height: 1.618
+}
+
+.lead-content{
+font-size: 1.2em;
+margin-top:70px;
+line-height:1;
+margin-bottom: 1.3em;
+  line-height: 1.618
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 30px;
+  line-height: 1.5;
+  color:red;
+}
+.nav-container .hamburger{
+  display:none;
+  visibility: collapse;
+  width: fit-content;
+  font-size : 30px;
+  position: absolute;
+  top : 30px;
+  right : 30px;
+  cursor: pointer;
+}
+.nav-container .hamburger .icon{
+  transform: rotate(90deg);
+  color: white;
+  width: fit-content;
+}
+.nav-container .close{
+  font-size : 25px;
+  color : white;
+  position : absolute;
+  top : 20px;
+  right : 30px;
+  display : none;
+  visibility: collapse;
+  cursor: pointer;
+  z-index : 3;
+  color : rgb(66, 66, 66);
+}
+.nav-container .close:hover{
+  color : #DC2626;
+}
+
+
+  @media (max-width: 992px){
+
+  /* Nav */
+  .nav-container ul li {
+    margin: 0 5px;
+    font-size: 15px;
+    border: 1.5px solid rgba(248, 248, 4, 0);
+    padding: 10px 10px;
+  }
+  .nav-container .title{
+    margin : 0 30px;
+  }
+  .nav-container ul {
+    list-style: none;
+    display : block;
+    z-index: 3;
+    position : absolute;
+    width : 100%;
+    top:0;
+    background-color: white;
+	left:0%;
+    padding-top : 50px;
+    padding-bottom : 30px;
+    display : none; 
+    visibility: collapse;
+  }
+  .nav-container ul li{
+    text-align: center;
+    border : none;
+  }
+  .nav-container ul li a{
+    color : red;
+    font-weight:700;
+  }
+  .nav-container ul li:hover{
+    border : none;
+    background-color: red;
+  }
+  .nav-container ul li a:hover{
+    border-bottom : 2px solid rgb(114, 109, 109);
+  }
+  .nav-container .hamburger{
+    display : block;
+    visibility: visible;
+  }}
+  @media (max-width: 576px){
+
+  /* Main-section */
+  .main-section{
+    text-align: center;
+  }
+  .main-section .flex{
+    justify-content: center;
+  }
+  .subheading{
+    margin: 1px;
+  }
+
+  /* Carousel */
+  .caroussel-container {
+    overflow: hidden;
+    height: 750px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+  }
+  .image {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    height: 750px;
+  }
+  .image img {
+    height: 750px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 0;
+  }
+  .main-section {
+    height: 545px;
+  }}
+  
+
+
+/* --------------------------------------------- Main Section ontop Carousel ----------------------------------------------- */
+.primary-btn {
+  background-color: var(--yellow);
+  /* color : white; */
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.primary-btn a{
+  color : black
+}
+.primary-btn:hover{
+  background-color: var(--dark-yellow) ;
+}
+.secondary-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  background-color: unset;
+}
+.secondary-btn a{
+  color : var(--yellow);
+}
+.secondary-btn:hover{
+  background-color: var(--yellow);
+}
+.secondary-btn:hover a{
+  color : black;
+}
+.main-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  height: 445px;
+}
+.main-section .btn a{
+  text-decoration: none;
+
+}
+.main-section .heading {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(228, 228, 228);
+}
+.top-head {
+  color: var(--light-gray);
+  padding: 0 10px;
+  margin: 0px 0;
+  width:max-content
+}
+.line {
+  border: 0.5px solid var(--light-gray);
+  width: 50px;
+  display: block;
+  position: relative;
+  top: 10px;
+  height: 0;
+  margin: 20px 0;
+}
+.flex {
+  display: flex;
+}
+.subheading {
+  color: var(--light-gray);
+  margin: 30px 0;
+  max-width: 700px;
+  width: 90%;
+  word-spacing: 1.5px;
+}
+.subheading span{
+  font-size : 17px;
+}
+.btn-container {
+  margin-top: 40px;
+}
+button {
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+		
+		</style>
+		<link rel="stylesheet" href="style.css" />
+		
+	</head>
+	<body>
+	
+	<!-----------------------------------------------------------------------Navbar Start--------------------------------------------->
+	<div class="caroussel-container">
+      <div class="caroussel">
+	    <div class="image"><img src="./images/aboutbg1.jpg" alt="Image5" /></div>
+        <div class="image"><img src="./images/aboutbg2.jpg" alt="Image4" width="1500" height="700"/></div>
+        <div class="image"><img src="./images/aboutbg3.jpg" alt="Image4" width="1500" height="700"/></div>
+		<div class="image"><img src="./images/aboutbg4.jpg" alt="Image5" /></div>	
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="main-div">
+		<nav class="nav-container" style=" margin-left:15%;">    
+		<div class="navbar navbar-fixed-top container-fluid" id="navbar">
+		  
+		 
+		 <div class=" navbar-right navbar-collapse" id="myNavbar">
+		   <ul>
+			<a href="#">
+			  <img src="./images/logo0.png" style=" height:60px; width: 150px; top: 0%; margin-left: 175px;">
+			  </a>
+			<li class="link"><a href="#home">HOME</a></li>
+			<li class="link"><a href="#projects">NEWS & EVENTS</a></li>
+			<div class="dropdown">
+			<li class="link"><a href="#pricing">DEPARTMENTS</a>
+				<div class="dropdown-content">
+				  <a href="#">Department of Magical Law Enforcement</a>
+				  <a href="#">Department for the Regulation and Control of Magical Creatures</a>
+				  <a href="#">Department of International Magical Cooperation</a>
+				  <a href="#">Department of Magical Transportation</a>
+				  <a href="#">Department of Magical Games and Sports</a>
+				  <a href="#">Department of Mysteries</a>
+				</div>
+			  </div> 
+			</li>
+			
+			<li class="link"><a href="#contact">ABOUT US</a></li>
+				  <li class="link"><a href="#contact">CONTACT US</a></li>
+			
+		   </ul>
+		 </div>
+	   <div class="hamburger">
+          <p class="icon">|||</p>
+        </div>
+        <div class="close"><i class="far fa-times-circle"></i></div>
+      
+	 
+  
+	  <script>
+		window.onscroll = function() {scrollFunction()};
+	 
+	function scrollFunction() {
+	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		
+		document.getElementById("navbar").style.background = "#696969";
+		document.getElementById("navbar").style.height = "70px";
+	  } else {
+	   
+		document.getElementById("navbar").style.background = "none";
+	  }
+	}
+	</script>
+	  </nav>
+	
+
+	  
+	  <div class="main-section">
+      <div class="flex" >
+        <span class="line" ></span>
+        <div><p class="top-head" >THE BEST PLACE FOR THE FINEST</p></div>
+        <span class="line" ></span>
+      </div>
+
+      <h1 class="heading" >Welcome to Hogwarts</h1>
+        <p class="subheading">
+         <H2 > Be a Part of this Magical Journey..</H2>
+        </p>
+       <div class="btn-container">
+        <button type="button" class="primary-btn btn" ><a href="#videos">EXPLORE MORE</a></button>
+        
+      </div>
+    </div>
+    </div>
+	</div>
+<br><br><br><br>
+<!-------------------------------------------------------------------NavbarEnd-------------------------------------------------->
+
+
+<!-------------------------------------------------------section start---------------------------------------------------------->
+
+	<div class="container-fluid">
+	
+		<div class="container"></br></br>
+			<h2 class="text-center s" style="font-family: 'Acme', sans-serif; ">ABOUT  <b style="color: red " >HOGWARTS </b> UNIVERSITY</h2></br></br>
+			<div class="row">
+				<div class="col-md-6">
+					<p style="font-family: 'Acme', sans-serif; " class="text-justify content"></br></br></br>
+						Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was the British wizarding school, located in the Scottish Highlands. It accepted magical students from Great Britain and Ireland for enrolment.
+						It was a state-owned school, funded by the Ministry of Magic.</br>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the Wizarding World, 
+						though other notable schools included Beauxbatons Academy of Magic in France, the Durmstrang Institute implied to be in northern Europe, and Ilvermorny School of Witchcraft and Wizardry in the United States.</p>
+					<a class="btn mtop" style="background-color: red; font-family: 'Acme', sans-serif; " href="#">FIND OUT MORE</a>
+				</div>
+				<div class="col-md-5 text-center">
+					<img class="cardimg" src="images/imageabout.jpg" style="width:120%; height:80%; border-radius:40px;">
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<!-------------------------------------------------------section end----------------------------------------------------------------->
+	<section class="why-us">
+		<div class="container">
+	        <div class="row">
+				<div class="col-md-8 offset-md-2">
+					<h2 class="mt-5 text-center" style="font-family: 'Acme', sans-serif; ">WHY CHOOSE <b style="color: red" > HOGWARTS</b></h2>
+					<p class="mb-5 text-center">First Fiddle Restaurants, formerly known as The Lazeez Affaire Group, was conceived in the year 1999 by Priyank Sukhija and Y.P. Ashok. The company is a renowned innovator and leader in the hospitality industry. Opened in the year 1999, the first outlet by .</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Quality education</a></h4>
+						<p>The highly skilled faculties proactively work in cultivating skills in budding Great Magicians.</p>
+						<img src="images/qltyedu.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Great Infrastructure</a></h4>
+						<p>Well equipped Labs and classrooms , engaged in 10000+ practical hours on Herbology, Dark Arts, etc.</p>
+						<img src="images/card1.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Huge Central Library</a></h4>
+						<p>There are 45000+ books, necessary required study material, national and international journals, magazines and newspapers.</p>
+						<img src="images/library.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Series of events and activities </a></h4>
+						<p>To bring out both the professional and cultural aspect of students.</p>
+						<img src="images/event.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Hostel and Mess Facility</a></h4>
+						<p>Highly modernised hostel and mess facilities managed by school administration.</p>
+						<img src="images/mess.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" style="font-family: 'Acme', sans-serif; ">
+						<h4><a href="#">Excellent Results</a></h4>
+						<p> At Hogwarts, a robust and rigorous process was followed to ensure that our students were awarded the right grades, and the results they deserved.</p>
+						<img src="images/edu.gif" alt="" style="height: 100%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Why Us Section -->
+	<!-----------------------------------------------------section start--------------------------------------------------------------->
+	<section>
+		<div class="container-fluid c w-100">
+		<div class="c">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center" style="margin-bottom: 90px; top: 0%;">
+						<h1 style=" font-family: prague; color: #fff; font-size: 60px; margin-top: 40px;"> </br></br>OUR MOTTO</h1></br>
+						<h2 style=" line-height: 40px; font-size: 40px; letter-spacing: 1px; color: red; margin-bottom:50px;"> Dormiens Nunquam Titillandus</h2>
+							<p style="line-height: 40px; font-size: 30px; letter-spacing: 1px; color: white;">which means Never tickle a sleeping dragon....</p>
+					</div>
+					<div class="col-md-2"></div>	
+				</div>	
+			</div>	
+			</div>
+		</div>
+	</section>
+	<!------------------------------------------------------------section end------------------------------------------------------>
+	<h2 class="text-center s" style="font-family: 'Acme', sans-serif; ">HOGWART'S<b style="color: red"> HOUSES</b></h2></br></br></br>
+	<section class="gallery" id="gallery">
+      <svg
+        class="svg-path"
+        width="100%"
+        height="36"
+        viewBox="0 0 1440 36"
+        class="u-block"
+        xmlns="http://www.w3.org/2000/svg"
+        style="width: 100%; height: auto"
+      >
+        <rect width="100%" height="100%" fill="red"></rect>
+        <path
+          d="M1440 36V8.2s-105.6-1.2-160.7-6a877 877 0 00-150.5 2.5c-42.1 3.9-140 15-223 15C754 19.6 700.3 6.8 548.8 7c-143.7 0-273.4 11.5-350 12.6-76.6 1.2-198.8 0-198.8 0V36h1440z"
+          fill="rgb(5, 5, 5)"
+        ></path>
+      </svg>
+	
+	<div class="clubs">
+	<div class="container-fluid">
+		<div class="container">
+			
+			
+				<div class="row">
+					<div class="col-md-6 text-center">
+							
+						<div class='card' style=" background-image: url(images/club1.jpg);">
+						  <div class='info'>
+							<p class='description' style="color:red"><b>GRYFFINDOR HOUSE</b></p>
+							
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+							<p class="text-justify content club-content">
+									Gryffindor values courage, bravery, nerve, and chivalry. The founder of the house is Godric Gryffindor.
+									The Head of this house is the Transfiguration Professor and Deputy Headmistress, Minerva McGonagall until she becomes headmistress, and the house ghost is Sir Nicholas de Mimsy-Porpington.</br>Gryffindor corresponds roughly to the element of fire.</p>
+					</div>	
+				</div></br>
+				
+				<div class="row">
+					<div class="col-md-6">
+							<p class="text-justify content club-content">
+									Hufflepuff values hard work, patience, justice, and loyalty. The founder of this house is Helga Hufflepuff.
+									The Head of this house is the Herbology Professor Pomona Sprout, and the house ghost is the Fat Friar.</br>Hufflepuff corresponds roughly to the element of earth.</p>
+					</div>
+					<div class="col-md-6 text-center">
+							
+						<div class='card' style=" background-image: url(images/hufflepuff.jpg);">
+						  <div class='info'>
+							<p class='description' style="color:#ffdf00 "><b>HUFFLEPUFF HOUSE</b></p>
+						  </div>
+						</div>
+					</div>
+						
+				</div></br></br>
+				
+				<div class="row">
+					<div class="col-md-6 text-center">	
+						<div class='card' style=" background-image: url(images/ravenclaw.jpg);">
+						  <div class='info'>
+							<p class='description' style="color: #ADD8E6"><b>RAVENCLAW HOUSE</b></p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+							<p class="text-justify content club-content">
+									Ravenclaw values intelligence, learning, wisdom and wit.The founder of this house is Rowena Ravenclaw.
+									The head of this house is the Charms teacher, Professor Filius Flitwick, and the house ghost is the Grey Lady.</br>Ravenclaw corresponds roughly to the element of air.</p>
+					</div>	
+				</div></br></br>
+				
+				<div class="row">
+				
+					<div class="col-md-6">
+							<p class="text-justify content club-content">
+									Slytherin values ambition, cunning, leadership, and resourcefulness.The founder of this house is Salazar Slytherin.
+									The Head of House is Professor Severus Snape. Then, the previous Head of House Professor Horace Slughorn comes out of retirement, re-assuming authority after Snape becomes headmaster. The ghost of Slytherin house is The Bloody Baron.</br>Slytherin corresponds roughly to the element of water.</p>
+					</div>
+					<div class="col-md-6 text-center">
+							
+						<div class='card' style=" background-image: url(images/slytherian.jpg);">
+						  <div class='info'>
+							<p class='description' style="color:green"><b>SLYTHERIN HOUSE</b></p>
+						  </div>
+						</div>
+					</div>
+						
+				</div>
+		</div>
+				
+</section></br></br>
+
+	<!------------------------------------------------------------------------section start---------------------------------------------->
+
+<section>
+
+	<div class="container-fluid">
+		<div class="container">
+			<h2 class="text-center s" style="font-family: 'Acme', sans-serif; ">OUR<b style="color: red ">  LEADERS</b></h2></br></br></br></br>
+			<div class="row">
+				<div class="col-md-5 text-center">
+					<div class="picture-frame">
+					<div class="matte">
+					<img class="cardimg" src="images/leader2.jpg">
+					</div>
+					</div>
+</div>
+
+				
+				<div class="col-md-7 ">
+					<h2 class="text-center s ">Albus Dumbledore</b></h2>
+					<p class="text-justify content lead-content">
+						Headmaster of Hogwarts and Supreme Mugwump of the International Confederation of Wizards and Chief Warlock of the Wizengamot.
+						The finest wizard of his generation, Dumbledore is the only wizard that Voldemort is afraid of.
+						Considered to be the most powerful wizard of his time, Dumbledore was awarded the Order of Merlin, First Class, and was the Supreme Mugwump of the International Confederation of Wizards as well as the Chief Warlock of the Wizengamot.						</p>
+					
+				</div>	
+			</div></br>
+			
+			<div class="row">
+			<div class="col-md-7">
+					<h2 class="text-center s ">Minerva McGonagall</b></h2>
+					<p class="text-justify content lead-content">
+						Deputy Headmistress of Hogwarts. Professor McGonagall is head of Gryffindor house and is the Transfiguration teacher.
+						as well as being the Deputy Headmistress under Albus Dumbledore and a member of the Order of the Phoenix.
+						Following Lord Voldemort's defeat at the hands of her student Harry Potter and the deaths of Headmasters Albus Dumbledore and Severus Snape, McGonagall takes the position of Headmistress.</p>
+				</div>
+				<div class="col-md-5 text-center">
+				<div class="picture-frame">
+					<div class="matte">
+					<img class="cardimg" src="images/leader3.jpg">
+				</div>	
+				</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!---------------------------------------------------------------------------------section end---------------------------------------->
+	<!--Footer Section--> 
+		
+	<footer class="footer-section">
+		<div class="container">
+			<div class="footer-cta pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fas fa-map-marker-alt"></i>
+							<div class="cta-text">
+								<h4>Find us</h4>
+								<span>Hogwarts Castle,
+									  Scotland, Great Britain</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fas fa-phone"></i>
+							<div class="cta-text">
+								<h4>Call us</h4>
+								<span>9876543210</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="far fa-envelope-open"></i>
+							<div class="cta-text">
+								<h4>Mail us</h4>
+								<span>abc@gmail.com</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 mb-50">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="./images/logo0.png" class="img-fluid" alt="logo"></a>
+							</div>
+							<div class="footer-text">
+								<p>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the Wizarding World.</p>
+							</div>
+							<div class="footer-social-icon">
+								<span>Follow us</span>
+								<a href="https://www.facebook.com/TheHogwartsSchool/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+								<a href="https://twitter.com/HogwartsMystery?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter twitter-bg"></i></a>
+								<a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Useful Links</h3>
+							</div>
+							<ul>
+								<li><a href="#">Home</a></li>                            
+								<li><a href="#">News & Events</a></li>                          
+								<li><a href="#">Departments</a></li>
+								<li><a href="#">About us</a></li>                          
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Subscribe</h3>
+							</div>
+							<div class="footer-text mb-25">
+								<p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+							</div>
+							<div class="subscribe-form">
+								<form action="#">
+									<input type="text" placeholder="Email Address">
+									<button><i class="fab fa-telegram-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+						<div class="footer-menu">
+							<ul>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	 <!------------------------------------section end----------------------------------------------------------->
+	<section>
+		<!-- Button trigger modal -->
+<div class="modal fade login0" id="aa">
+    <div class="modal-dialog ">
+        <div class="modal-content login1">
+            <div class="modal-content">
+                <img src="https://i.gifer.com/8Mvj.gif" class="w-100">
+            </div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                   <button type="button" class="close" data-dismiss="modal">
+                      <span >&times;</span>
+                   </button>
+            </div>
+    <!-- Button trigger modal -->
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                       <label>Username:</label>
+                       <input type="text" name="" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                       <label>Password:</label>
+                       <input type="password" name="" class="form-control">
+                    </div>
+                    <button class="btn btn-info">Login</button>
+                </form>
+            </div>
+        </div>
+    </div><!----- model fade div end-------->
+	</section>
+	<script src="script.js"></script>
+	<script src="counter.js"></script>
+	<script src="testimonial.js"></script>
+</body>
+</html>

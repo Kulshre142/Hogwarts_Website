@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" href="./images/icons/.ico">
+    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+
+   <!-- Favicon -->
+   <link href="images/home.png" rel="icon">
+
+  <!--Google FOnts-->
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	  <!-- Font-Awesome -->
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!--Animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	
+    <link rel="stylesheet" href="style.css" /> <!--Static style.css-->
+    <title>Home</title>
+
+    <style>
+      .nav-container .hamburger{
+  display:none;
+  visibility: collapse;
+  width: fit-content;
+  font-size : 30px;
+  position: absolute;
+  top : 30px;
+  right : 30px;
+  cursor: pointer;
+}
+.nav-container .hamburger .icon{
+  transform: rotate(90deg);
+  color: white;
+  width: fit-content;
+}
+.nav-container .close{
+  font-size : 25px;
+  color : white;
+  position : absolute;
+  top : 20px;
+  right : 30px;
+  display : none;
+  visibility: collapse;
+  cursor: pointer;
+  z-index : 3;
+  color : rgb(66, 66, 66);
+}
+.nav-container .close:hover{
+  color : #DC2626;
+}
+
+
+  @media (max-width: 992px){
+
+  /* Nav */
+  .nav-container ul li {
+    margin: 0 5px;
+    font-size: 15px;
+    border: 1.5px solid rgba(248, 248, 4, 0);
+    padding: 10px 10px;
+  }
+  .nav-container .title{
+    margin : 0 30px;
+  }
+  .nav-container ul {
+    list-style: none;
+    display : block;
+    z-index: 3;
+    position : absolute;
+    width : 100%;
+    top:0;
+    left:0%;
+    background-color: white;
+    padding-top : 50px;
+    padding-bottom : 30px;
+    display : none; 
+    visibility: collapse;
+  }
+  .nav-container ul li{
+    text-align: center;
+    border : none;
+  }
+  .nav-container ul li a{
+    color : rgb(66, 66, 66);
+    font-weight:700;
+  }
+  .nav-container ul li:hover{
+    border : none;
+    background-color: var(--yellow);
+  }
+  .nav-container ul li a:hover{
+    border-bottom : 2px solid rgb(114, 109, 109);
+  }
+  .nav-container .hamburger{
+    display : block;
+    visibility: visible;
+  }}
+  @media (max-width: 576px){
+
+  /* Main-section */
+  .main-section{
+    text-align: center;
+    
+  }
+  .main-section .flex{
+    justify-content: center;
+    
+  }
+  
+  /* Carousel */
+  .caroussel-container {
+    overflow: hidden;
+    height: 750px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+  }
+  .image {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    height: 750px;
+  }
+  .image img {
+    height: 750px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 0;
+  }
+  .main-section {
+    height: 545px;
+  }
+
+  .btn-container {
+  margin-top: 40px;
+  
+}
+}
+
+
+
+/* --------------------------------------------- Main Section ontop Carousel ----------------------------------------------- */
+
+
+.secondary-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  background-color: unset;
+}
+.secondary-btn a{
+  color : var(--yellow);
+}
+.secondary-btn:hover{
+  background-color: var(--yellow);
+}
+.secondary-btn:hover a{
+  color : black;
+}
+.main-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  height: 445px;
+}
+.main-section .btn a{
+  text-decoration: none;
+
+}
+.main-section .heading {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(228, 228, 228);
+}
+
+.top-head {
+  color: var(--light-gray);
+  padding: 0 10px;
+  margin: 0px 0;
+  width:max-content
+}
+.line {
+  border: 0.5px solid var(--light-gray);
+  width: 50px;
+  display: block;
+  position: relative;
+  top: 10px;
+  height: 0;
+  margin: 20px 0;
+}
+.flex {
+  display: flex;
+}
+.subheading {
+  color: var(--light-gray);
+  margin: 30px 0;
+  max-width: 700px;
+  width: 90%;
+  word-spacing: 1.5px;
+}
+.subheading span{
+  font-size : 17px;
+}
+.btn-container {
+  margin-top: 40px;
+}
+button {
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="caroussel-container">
+      <div class="caroussel">
+	    <div class="image"><img src="./images/00.jpg" alt="Image5" width="1500" height="700"/></div>    <!--Static images-->
+        <div class="image"><img src="./images/image99.png" alt="Image4" width="1500" height="700"/></div> <!--Static images-->
+        <div class="image"><img src="./images/66.jpg" alt="Image4" width="1500" height="700"/></div> <!--Static images-->
+		<div class="image"><img src="./images/55.jpg" alt="Image5" width="1500" height="700"/></div> <!--Static images-->
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="main-div">
+      <nav class="nav-container">
+      <div class="navbar navbar-fixed-top container-fluid " id="navbar"> 
+      
+        <div class="navbar-right navbar-collapse" id="myNavbar">
+         <ul>
+          <a href="#">
+            <img src="./images/logo0.png" style=" height:60px; width: 150px; top: 0%; margin-left: 175px;">
+            </a>
+          <li class="link"><a href="#home">HOME</a></li>
+          <li class="link"><a href="#projects">NEWS & EVENTS</a></li>
+          <div class="dropdown">
+          <li class="link"><a href="#pricing">DEPARTMENTS</a>
+              <div class="dropdown-content">
+                <a href="#">Department of Magical Law Enforcement</a>
+                <a href="#">Department for the Regulation and Control of Magical Creatures</a>
+                <a href="#">Department of International Magical Cooperation</a>
+                <a href="#">Department of Magical Transportation</a>
+                <a href="#">Department of Magical Games and Sports</a>
+                <a href="#">Department of Mysteries</a>
+              </div>
+            </div> 
+          </li>
+          
+          <li class="link"><a href="#contact">ABOUT US</a></li>
+			    <li class="link"><a href="#contact">CONTACT US</a></li>
+          
+         </ul>
+       </div>
+       <div class="hamburger">
+        <p class="icon">|||</p>
+      </div>
+      <div class="close"><i class="far fa-times-circle"></i></div>
+    
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+   
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      
+      document.getElementById("navbar").style.background = "#696969";
+      document.getElementById("navbar").style.height = "70px";
+    } else {
+     
+      document.getElementById("navbar").style.background = "none";
+    }
+  }
+  </script>
+    </nav>
+       
+    <div class="main-section">
+      <div class="flex" style="margin-left:245px">
+        <span class="line" ></span>
+        <div><p class="top-head" >THE BEST PLACE FOR THE FINEST</p></div>
+        <span class="line" ></span>
+      </div>
+
+      <h1 class="heading" style="margin-left:245px">Welcome to Hogwarts</h1>
+        <p class="subheading">
+         <H2 style="margin-left:245px"> Be a Part of this Magical Journey..</H2>
+        </p>
+        
+      <div class="btn-container">
+        <button type="button" class="primary-btn btn" style="margin-left:235px "><a href="#videos">EXPLORE MORE</a></button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+	
+	</br></br></br></br>
+	<section class="welcome" id = "home">
+      <h1 class="center heading" id = "section-head" data-aos="zoom-in">OUR MISSION</h1></br></br>
+    
+      <div class="grid">
+        <div class="left-container">
+          <p id= "wel"data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">Since 1980, we are serving the very natives and tourists of California. We bake our best to bring delicious food to your table. We have the most talented chefs working with us here. At Cakesmith we are dedicated to all things seasonal with a market-driven day-time menu that also offers a variety of artisan breads and pastries made daily with locally-sourced, heirloom grains.</br></br> I hope you have some great memories of baked goods, where the scent of fresh-baked bread or chocolate chip cookies came from a kitchen with people who loved and cared about you.</br></br> If you were lucky enough to experience this with someone special, then you know what I’m talking about. I hope that you feel that way with every order you receive from " The Cakesmith ".</p>
+        </div>
+        <div class="right-container">
+          <div class="image-container">
+            <img src="./images/pic1.jpg" alt="Image" class="one">    <!--Static images-->
+            <img src="./images/pic2.jpg" alt="Image" class="two">     <!--Static images-->
+            <img src="./images/96.jpg" alt="Image" class="three">     <!--Static images-->
+          </div>
+        </div>
+      </div>
+	  </section>
+	  
+	  
+<section class="alumni">
+<h1 class="center heading" id = "section-head" data-aos="zoom-in">OUR PROUD ALUMNI</h1></BR></BR></BR></BR>
+<div class="bg-alumni">	  
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="images/harry.PNG">       <!--Static images-->
+        </div>
+        <div class="team-content" data-aos="fade-up-right"><h3>Harry Potter</h3>
+          <h4 class="title">Alumini</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/DanielRadcliffeNews/" class="fa fa-facebook" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://twitter.com/danjradcliffenl?lang=en" class="fa fa-twitter" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-radcliffe-53a0274/?originalSubdomain=uk" class="fa fa-linkedin" aria-hidden="true" target="blank"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="images/hermoine.PNG">     <!--Static images-->
+        </div>
+        <div class="team-content" data-aos="fade-up-right">
+          <h3 class="name">Hermione Granger</h3>
+          <h4 class="title">Alumini</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/HermioneJeanGranger98/" class="fa fa-facebook" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://twitter.com/hermionegranger?lang=en" class="fa fa-twitter" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://www.linkedin.com/in/hermoine-granger-300856214/?originalSubdomain=in/" class="fa fa-linkedin" aria-hidden="true" target="blank"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="images/ron.PNG">       <!--Static images-->
+        </div>
+        <div class="team-content" data-aos="fade-up-right">
+          <h3 class="name">Ron Weasely</h3>
+          <h4 class="title">Alumini</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/RonaldGingerWeasley/" class="fa fa-facebook" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://twitter.com/mrronaldweasley?lang=en" class="fa fa-twitter" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://www.linkedin.com/in/ron-weasley-3525451b7/" class="fa fa-linkedin" aria-hidden="true" target="blank"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="images/gimme.PNG">          <!--Static images-->
+        </div>
+        <div class="team-content" data-aos="fade-up-right">
+          <h3 class="name">Ginny Weasely</h3>
+          <h4 class="title">Alumini</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/pages/category/Public-Figure/Ginny-Weasley-250514428322792/" class="fa fa-facebook" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://twitter.com/ginnyweaselette?lang=en" class="fa fa-twitter" aria-hidden="true" target="blank"></a></li>
+          <li><a href="https://www.linkedin.com/in/bonnie-wright-58862418b/" class="fa fa-linkedin" aria-hidden="true" target="blank"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+		<section class="counters">
+			<div class="count-container" data-aos="zoom-in-up">
+				<div>
+					<img src="./images/classroom-256.png" alt="Image" class="img">      <!--Static images-->
+					<div class="counter" data-target="2000">0</div>
+					<h3>Faculty</h3>
+				</div>
+				<div>
+					<img src="./images/bag.png" alt="Image" class="img" height="80px">  <!--Static images-->
+					<div class="counter" data-target="50000">0</div>
+					<h3>Network</h3>
+				</div>
+				<div>
+					<img src="./images/student.png" alt="Image" class="img"> <!--Static images-->
+					<div class="counter" data-target="20000">0</div>
+					<h3>Students</h3>
+				</div>
+				<div>
+					<img src="./images/trophy.png" alt="Image" class="img">   <!--Static images-->
+					<div class="counter" data-target="500">0</div>
+					<h3>Acheivements</h3>
+				</div>
+			</div>
+		</section>
+		
+		</br>
+		<section>
+		
+		<section id="Life">
+		 <div class="container">
+    <h1 class="text-center " data-aos="zoom-in">LIFE AT HOGWARTS</h1></br></br></br></br></br>
+	<div class="row" data-aos="fade-right">
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/1.PNG" alt="Image" height="150px">   <!--Static images-->
+            
+          </a>
+          </br>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="" >
+            <img src="./images/2.PNG" alt="Image" height="150px"/>  <!--Static images-->
+          </a>
+          </br>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/3.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/4.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-left">
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/5.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+        <div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/6.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+		<div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/7.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+		<div class="col-xs-6 col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="./images/8.PNG" alt="Image" height="150px"/> <!--Static images-->
+          </a>
+          </br>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+</section>
+		</br></br></br>
+		<section class="spacer">
+			 <h1 data-aos="zoom-in"><center> STUDENT SPEAKS</center></H1></br></br></br></br>
+				<div class="testimonial-section">
+					<div class="testi-user-img">
+					<div class="swiper-container gallery-thumbs">
+						  <div class="swiper-wrapper">
+								  <div class="swiper-slide">
+										<img class="u3" src="./images/95.jpg" alt="">  <!--Static images-->
+									</div>
+						  <div class="swiper-slide">
+							  <img class="u1" src="./images/79.PNg" alt=""> <!--Static images-->
+						  </div>
+						  <div class="swiper-slide">
+						  <img class="u2" src="./images/14.jpg" alt=""> <!--Static images-->
+						  </div>
+					  
+						  <div class="swiper-slide">
+						  <img class="u4" src="./images/89.jpg" alt=""> <!--Static images-->
+						  </div>
+						  
+						  </div>
+					  </div>
+					</div>
+					<div class="user-saying">
+						  <div class="swiper-container testimonial">
+								  <!-- Additional required wrapper -->
+								  <div class="swiper-wrapper ">
+									  <!-- Slides -->
+									  <div class="swiper-slide">
+										  <div class="quote">
+												  <img class="quote-icon" style="font-size:2vw;" src="https://md-aqil.github.io/images/quote.png" alt=""> <!--Static images-->
+											  <p style="font-size:2vw;">
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div style="font-size:2vw;" class="name">-Hermione Granger-</div>
+											  <div style="font-size:2vw;" class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" style="font-size:2vw;" src="https://md-aqil.github.io/images/quote.png" alt=""> <!--Static images-->
+											
+											  <p style="font-size:2vw;">
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div style="font-size:2vw;" class="name">-Oliver Wood-</div>
+											  <div style="font-size:2vw;" class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" style="font-size:2vw;" src="https://md-aqil.github.io/images/quote.png" alt=""> <!--Static images-->
+												  
+											  <p style="font-size:2vw;">
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div style="font-size:2vw;" class="name">-Cho Chang-</div>
+											  <div style="font-size:2vw;" class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+											  <div class="quote">
+													<img class="quote-icon" style="font-size:2vw;" src="https://md-aqil.github.io/images/quote.png" alt="">  <!--Static images-->
+												 
+												  <p style="font-size:2vw;">
+														  “This is best and biggest unified platform
+												  for instant online admission. We can easily
+												  take admission for any course in any institute..“
+												  </p>
+												  <div style="font-size:2vw;" class="name">-Luna Lovegood-</div>
+												  <div style="font-size:2vw;" class="designation">University Student</div>
+												  
+											  </div>
+										  </div>
+									  
+								  </div>
+								  <!-- If we need pagination -->
+								  <div class="swiper-pagination swiper-pagination-white"></div>
+							  
+							  </div>
+					</div>
+				</div>
+			</section>
+	<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+ 
+	
+	  <!--Footer Section--> 
+		
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Hogwarts Castle,
+                                  Scotland, Great Britain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>abc@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./images/logo0.png" class="img-fluid" alt="logo"></a>  <!--Static images-->
+                        </div>
+                        <div class="footer-text">
+                            <p>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the Wizarding World.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="https://www.facebook.com/TheHogwartsSchool/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="https://twitter.com/HogwartsMystery?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>                            
+                            <li><a href="#">News & Events</a></li>                          
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">About us</a></li>                          
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+    <script src="script.js"></script>           <!--Static Script .js-->
+	<script src="counter.js"></script>          <!--Static Counter .js-->
+	<script src="testimonial.js"></script>       <!--Static Testimonial .js-->
+
+   
+   <!--Animation-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+       AOS.init({
+           duration:1000,
+       });
+   </script>
+
+  </body>
+</html>

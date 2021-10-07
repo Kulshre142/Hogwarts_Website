@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icons/.ico">
+    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+	
+	<!-- Bootstrap Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	  
+    <!-- Favicon -->
+   <link href="images/favicon.png" rel="icon">
+ 
+   <!--Google FOnts-->
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="style.css" />
+    <title>Departments</title>
+	<style>
+	
+	@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
+
+.container-faq{
+  margin: 0 auto;
+  padding: 4rem;
+  width: 85%;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #e32d05;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: white;
+  font-size: 20px;
+  
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #e32d05;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #e32d05;
+  border: 1px solid white;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #e32d05;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 2rem;
+  
+  margin: 2em 0;
+}
+
+
+	
+	.title {
+ 
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card-block {
+    
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+	color:black;
+  
+}
+.card {
+    font-size: 1.2em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .7rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+	background-color:grey;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.btn {
+  margin-top: auto;
+}
+	
+	.picture-frame {
+	  
+	  width: 60%;
+	  height:110%;
+	  border:grey solid 15px;
+	  -webkit-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+	  
+	}
+	
+	
+	.art {
+	  width:90%;
+	  margin-top:30px;
+	}
+
+
+
+
+.lead-content{
+font-size: 1.2em;
+
+
+margin-bottom: 1.3em;
+  line-height: 1.618;
+}
+	
+	.a{
+		background-color: #0000009c;
+		}
+		.mbl_logo{
+			display:none;
+		}
+		@media(max-width:400px){
+			.mbl_logo{
+				    display: block;
+
+				    }
+				    .desk_logo{
+				    	display:none;
+				    }
+				}
+				.mtop{
+				margin-top: 30px;
+                margin-bottom: 100px;
+			}
+			
+			
+            .cardimg
+            {
+				width: 80%;
+				margin:0px;
+			}
+			@media(max-width: 400px){
+				.cardimg{
+					width: 100%;
+				}
+			}
+			.s{
+				padding-top: 20px;
+                text-transform: uppercase;
+                font-family: prague;
+                letter-spacing: 3px;            
+			}
+			.c
+			{
+				background: url("https://www.firstfiddle.in//assets/images/bannerabout.jpg");
+				background-size:cover;
+				 
+				width:100%;
+    		}
+			
+			.dep-container{
+			margin:60px 160px;
+			line-height:2em;
+			font-size:16px;
+			}
+			.first-container{
+			padding-left:30%;
+			}
+			.button_apply {
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button_apply span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_apply span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_apply:hover span {
+  padding-right: 25px;
+}
+
+.button_apply:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.nav-container .hamburger{
+  display:none;
+  visibility: collapse;
+  width: fit-content;
+  font-size : 30px;
+  position: absolute;
+  top : 30px;
+  right : 30px;
+  cursor: pointer;
+}
+.nav-container .hamburger .icon{
+  transform: rotate(90deg);
+  color: white;
+  width: fit-content;
+}
+.nav-container .close{
+  font-size : 25px;
+  color : white;
+  position : absolute;
+  top : 20px;
+  right : 30px;
+  display : none;
+  visibility: collapse;
+  cursor: pointer;
+  z-index : 3;
+  color : rgb(66, 66, 66);
+}
+.nav-container .close:hover{
+  color : #DC2626;
+}
+
+
+  @media (max-width: 992px){
+
+  /* Nav */
+  .nav-container ul li {
+    margin: 0 5px;
+    font-size: 15px;
+    border: 1.5px solid rgba(248, 248, 4, 0);
+    padding: 10px 10px;
+  }
+  .nav-container .title{
+    margin : 0 30px;
+  }
+  .nav-container ul {
+    list-style: none;
+    display : block;
+    z-index: 3;
+    position : absolute;
+    width : 100%;
+    top:0;
+    background-color: white;
+    padding-top : 50px;
+    padding-bottom : 30px;
+    display : none; 
+    visibility: collapse;
+  }
+  .nav-container ul li{
+    text-align: center;
+    border : none;
+  }
+  .nav-container ul li a{
+    color : rgb(66, 66, 66);
+    font-weight:700;
+  }
+  .nav-container ul li:hover{
+    border : none;
+    background-color: var(--yellow);
+  }
+  .nav-container ul li a:hover{
+    border-bottom : 2px solid rgb(114, 109, 109);
+  }
+  .nav-container .hamburger{
+    display : block;
+    visibility: visible;
+  }}
+  @media (max-width: 576px){
+
+  /* Main-section */
+  .main-section{
+    text-align: center;
+  }
+  .main-section .flex{
+    justify-content: center;
+  }
+  .subheading{
+    margin: 1px;
+  }
+
+  /* Carousel */
+  .caroussel-container {
+    overflow: hidden;
+    height: 750px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+  }
+  .image {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    height: 750px;
+  }
+  .image img {
+    height: 750px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 0;
+  }
+  .main-section {
+    height: 545px;
+  }}
+  
+
+
+			</style>
+  </head>
+  <body>
+  
+    <div class="caroussel-container">
+      <div class="caroussel">
+	    <div class="image"><img src="./images/depart1.png" alt="Image5" /></div>
+        <div class="image"><img src="./images/depart3.jpg" alt="Image4"/></div>
+        <div class="image"><img src="./images/depart5.jpg" alt="Image4"/></div>
+		<div class="image"><img src="./images/depart4.jpg" alt="Image5" /></div>
+		
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="main-div">
+     
+    <nav class="nav-container">
+		  
+    
+        <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+          <div class="navbar-header">
+         
+         <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+           <ul>
+            <a href="#">
+              <img src="./images/logo0.png" style=" height:60px; width: 150px; top: 0%; padding-left: 2px;" >
+              </a>
+            <li class="link"><a href="#home">HOME</a></li>
+            <li class="link"><a href="#projects">NEWS & EVENTS</a></li>
+            <div class="dropdown">
+            <li class="link"><a href="#pricing">DEPARTMENTS</a>
+                <div class="dropdown-content">
+                  <a href="#">Department of Magical Law Enforcement</a>
+                  <a href="#">Department for the Regulation and Control of Magical Creatures</a>
+                  <a href="#">Department of International Magical Cooperation</a>
+                  <a href="#">Department of Magical Transportation</a>
+                  <a href="#">Department of Magical Games and Sports</a>
+                  <a href="#">Department of Mysteries</a>
+                </div>
+              </div> 
+            </li>
+            
+            <li class="link"><a href="#contact">ABOUT US</a></li>
+                  <li class="link"><a href="#contact">CONTACT US</a></li>
+            
+           </ul>
+         </div>
+       </div>
+       <div class="hamburger">
+        <p class="icon">|||</p>
+      </div>
+      <div class="close"><i class="far fa-times-circle"></i></div>
+    
+      </div>
+  
+      
+      <script>
+        window.onscroll = function() {scrollFunction()};
+     
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        
+        document.getElementById("navbar").style.background = "#696969";
+      } else {
+       
+        document.getElementById("navbar").style.background = "none";
+      }
+    }
+    </script>
+      </nav>
+    
+    
+      <div class="main-section">
+        <div class="flex">
+          <span class="line"></span>
+          <div><p class="top-head">THE BEST PLACE FOR THE FINEST</p></div>
+          <span class="line"></span>
+        </div>
+
+
+    <h1 class="heading" >Welcome to Hogwarts</h1>
+        <p class="subheading">
+          <span>
+            Be a Part of this Magical Journey..
+          </span>
+          <br /><br />Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the Wizarding World
+        </p>
+        <div class="btn-container">
+          <button type="button" class="primary-btn btn"><a href="#videos">EXPLORE MORE</a></button>
+          
+        </div>
+      </div>
+    </div>
+	</div>
+	</br></br></br> 
+	
+	
+	
+
+<section  >
+
+	
+		<div class="dep-container"  >
+			
+			<div class="first-container c ">
+					<div class="picture-frame center">
+					
+					<img class="cardimg"  src="images/depart-3.jpg">
+					
+					</div>	
+			</div>
+			<p class="text-center content" ></br></br>
+						Hogwarts had in its faculty an abundance of wise and talented professors. Each specialised in a specific subject.Other staff positions included that of a school nurse, caretaker, librarian, and Keeper of the Keys and Grounds of Hogwarts. There were a variety of classes taught at Hogwarts School of Witchcraft and Wizardry.These included both the core curriculum and the electives, available from third year forward. Some classes could be dropped in the sixth year.
+						</p>
+			
+	</div>
+	
+	
+</section>
+
+
+<div class="container-fluid">
+		<div class="container">
+			<h2 class="text-center s" style="font-family: 'Acme', sans-serif">HOGWART'S  <b style="color: red "> DEPARTMENTS</b></h2></br></br></br></br>
+			<div class="row">
+				<div class="col-md-5 text-center">
+					<div class="picture-frame">
+					<div class="matte">
+					<img class="cardimg" src="images/snape.jpg">
+					</div>
+					</div>
+</div>
+
+				
+				<div class="col-md-7 ">
+				
+					<p class="text-justify content lead-content">
+						
+						There were a variety of subjects taught at Hogwarts School of Witchcraft and Wizardry. These included both the core curriculum
+						and the electives, available from third year forward. In the fifth year, students took the Ordinary Wizarding Level (O.W.L.) exams to
+						determine whether they could achieve a score high enough to continue to N.E.W.T.-level (Nastily Exhausting Wizarding Test) for the class in the remaining two years.
+					</p>
+				</div>	
+			</div></br>
+			</br></br></br></br>
+			<div class="row">
+			<div class="col-md-7">
+					
+					<p class="text-justify content lead-content "style="padding-right:40px;">
+						
+						Being a school of magic, many subjects at Hogwarts differ from the studies of a typical school. Some subjects, suchas History of Magic,
+						derive from non-wizard – or muggle – subjects, but many others, such as charms and apparition classes,Each examination consists of a written knowledge
+						test and, where applicable, a practical demonstration of skills before a panel of proctors from the Ministry of Magic are unique to the wizarding world.
+					</p>
+				</div>
+				<div class="col-md-5 text-center">
+				<div class="picture-frame">
+					<div class="matte">
+					<img class="cardimg"  src="images/armando.jpg">
+				</div>	
+				</div>
+					</div>
+			</div>
+		</div>
+	</div></br></br></br></br>
+
+   
+	<section>
+   <div class="container py-3">
+   <div class="title h1 text-center" style="color: #EAB308;">COURSES WE <b style="color: red"> OFFERS</b></div>
+  <!-- Card Start -->
+  <div class="card">
+    <div class="row ">
+
+      <div class="col-md-7 px-3">
+        <div class="card-block px-6">
+          <h2 class="card-title text-center"><b style="color: rgb(194, 0, 0)">HOGWARTS CURRICULUM </b></h2>
+          <p class="card-text"></br>
+            <b>There were a variety of subjects taught at Hogwarts School of Witchcraft and Wizardry. These included both the core curriculum and the electives. </b> </p>
+        
+		<p class="card-text"><b> The curriculum at Hogwarts is rich, varied, and full of fascinating, magical subjects, but some are undeniably more important (and interesting) than others. Here are the main departs of Hogwarts.</b></p>
+          <br>
+        </div>
+      </div>
+      <!-- Carousel start -->
+      <div class="col-md-5">
+        <div id="CarouselTest" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#CarouselTest" data-slide-to="0" class="active"></li>
+            <li data-target="#CarouselTest" data-slide-to="1"></li>
+            <li data-target="#CarouselTest" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" style="width:450px; height:300px;" src="images/astro3.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" style="width:450px; height:300px;" src="images/dark-arts.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" style="width:450px; height:300px;" src="images/herbology.jpg" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#CarouselTest" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#CarouselTest" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+          </div>
+        </div>
+      </div>
+      <!-- End of carousel -->
+    </div>
+  </div>
+  <!-- End of card -->
+
+</div>
+</br></br>
+
+<div class="container">
+  <div class="card float-left">
+    <div class="row ">
+
+      <div class="col-sm-8">
+        <div class="card-block">
+		<!--           <h4 class="card-title">Small card</h4> -->
+          <h4><b>Department of Magical Law Enforcement</b></h4>
+          <p>The Department of Magical Law Enforcement was the </br>biggest and arguably the most important of the various </br>departments in the Ministry of Magic, functioning as a </br>combination of police and justice facilities.</p>
+			<h4><b>Head of the Department :</b>&nbsp; Harry Potter </h4>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img class="d-block w-100" src="images/magicallaw.jpg" style="width:150px; height:240px;"alt="">
+      </div>
+    </div>
+  </div>
+</br></br>
+ 
+    <div class="card float-right">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="d-block w-100" src="images/regulation.jpg" style="width:150px; height:240px;" alt="">
+        </div>
+        <div class="col-sm-8">
+          <div class="card-block">
+            <!--           <h4 class="card-title">Small card</h4> -->
+            <h4><b>Department for the Regulation and Control of Magical Creatures</b></h4>
+          <p>The Department for the Regulation and Control of</br> Magical Creatures is a department of the Ministry of Magic which</br>  has responsibility for all types of magical creatures,including </br>the difficulties arising from the definition of a “creature.”</p>
+		  <h4><b>Head of the Department :</b>&nbsp; Amos Diggory </h4>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+	
+  </div>
+ 
+ <br>
+<br>
+
+<div class="container">
+  <div class="card float-left">
+    <div class="row ">
+
+      <div class="col-sm-8">
+        <div class="card-block">
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <h4><b>Department of International Magical Cooperation</b></h4>
+          <p>The Department of International Magical Cooperation work with</br> magical governments of other countries, set standards for trade, </br>create regulations for things like cauldron thickness,</br> interpret international magical law.
+		  </p>
+		  <h4><b>Head of the Department :</b>&nbsp; Barty Crouch Snr </h4>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img class="d-block w-100" src="images/intermagical.jpg" style="width:150px; height:240px;" alt="">
+      </div>
+    </div>
+  </div>
+
+ 
+    <div class="card float-right">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="d-block w-100" src="images/transfortation1.jpg" style="width:150px; height:240px;" alt="">
+        </div>
+        <div class="col-sm-8">
+          <div class="card-block">
+            <!--           <h4 class="card-title">Small card</h4> -->
+           <h4><b>Department of Magical Transportation</b></h4>
+          <p>The Department of Magical Transportation oversees the</br> various methods of wizarding transport. It was located</br> on the sixth level of the Ministry of Magic.The seal of this department</br> features a Biohazard symbol, maybe in a nod to the dangers.
+		  </p>
+		  <h4><b>Head of the Department :</b>&nbsp;  Madam Edgecombe </h4>
+		  </div>
+        </div>
+ 
+      </div>
+    </div>
+	
+  </div>
+  </br>
+  </br>
+  
+  <div class="container">
+  <div class="card float-left">
+    <div class="row ">
+
+      <div class="col-sm-8">
+        <div class="card-block">
+          <!--           <h4 class="card-title">Small card</h4> -->
+          <h4><b>Department of Magical Games and Sports</b></h4>
+          <p>The Department of Magical Games and Sports was a department of </br>the Ministry of Magic. It was charged with the regulation of all </br>sport-related events in the Wizarding world.  It was roughly the equivalent</br> to the real-life British Department of Media and Sport.
+		  </p>
+		   <h4><b>Head of the Department :</b>&nbsp;  Hamish MacFarlan </h4>
+		</div>
+      </div>
+
+      <div class="col-sm-4">
+        <img class="d-block w-100" src="images/gamesandsports.jpg" style="width:150px; height:240px;" alt="">
+      </div>
+    </div>
+  </div>
+
+ 
+    <div class="card float-right">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="d-block w-100" src="images/mysteries.png" style="width:150px; height:240px;" alt="">
+        </div>
+        <div class="col-sm-8">
+          <div class="card-block">
+            <!--           <h4 class="card-title">Small card</h4> -->
+            <h4><b>Department of Mysteries</b></h4>
+          <p>The Department of Mysteries was a section of the Ministry of</br> Magic that carried out confidential research. Most of its </br>operations were carried out in total secrecy.Various mysteries</br>the world were studied there, including love,</br> space, thought, time, death, and others.
+          </p>
+		  <h4><b>Head of the Department :</b>&nbsp;  Eloise Mintumble </h4>
+		  </div>
+        </div>
+ 
+      </div>
+    </div>
+	
+  </div>
+</section>
+
+</br></br></br></br>
+
+<p style="margin-left:42%;">
+   <button class="button_apply"><span>APPLY NOW</span></button>
+   </p>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+	<section></br></br></br>
+	<div class="container-faq" id="faq">
+      <h2><center>FREQUENTLY ASKED QUESTIONS</center></h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">
+              Do I have to complete all of the classes in a year before moving to the next one?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Not technically. However, there's a good possibility you might be lost if you don't first complete previous years' courses before attempting the higher levels. Most professors structure their courses so that each year builds on the previous one, or incorporates information from another class. Therefore, it's highly recommended that you complete the courses in order starting with Year One and moving up to the current year.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">  
+										Do I have to take classes?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              You do not! You are free to create an adult character and participate in the forums, read books in the library (or write your own), participate in Groups & Roleplays, and most other features on the site.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">
+              How do I contact a professor?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Send them an owl or post on their wall, depending on the level of privacy your question requires. To learn how to send an owl, read ‘How do I send an owl?’
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">
+              What is a Professor's Assistant (PA)? How do I become one?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Professors' Assistants, or PAs, are students on the site that help professors with some of their daily tasks, most notably grading.
+  </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">
+              What are dormitories?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Dormitories are an area of the site where you can meet and hang out with members of your house. You can find them by clicking on 'Hogwarts' on the top bar and then 'Dormitories'. You can look through the list of dormitories, join a random dormitory, or create your own.
+
+Dormitories contain a feed area (similar to the main site feed) and a chat room. Only dorm members can see the feed or chat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+  </br></br>
+  <!--Footer Section--> 
+		
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Hogwarts Castle,
+                                  Scotland, Great Britain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>abc@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./images/logo0.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the Wizarding World.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>                            
+                            <li><a href="#">News & Events</a></li>                          
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">About us</a></li>                          
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+	
+	<script src="faq.js"></script>
+  </body>
+</html>
