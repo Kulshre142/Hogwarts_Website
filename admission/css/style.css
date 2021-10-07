@@ -253,8 +253,7 @@ select {
 
 .form-submit {
   text-align: right;
-  padding-top: 27px;
-}
+  padding-top: 27px; }
 
 .submit {
   width: 140px;
@@ -265,13 +264,13 @@ select {
   font-size: 16px;
   padding: 10px;
   border: none;
-  cursor: pointer;
-  font-family: 'Acme', sans-serif; }
+  cursor: pointer; }
 
 #reset {
   background: #f8f8f8;
   color: #999;
-  margin-right: 8px; }
+  margin-right: 8px;
+  }
   #reset:hover {
     background: red;
     color: #fff; }
