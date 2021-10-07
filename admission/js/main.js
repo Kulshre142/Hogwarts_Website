@@ -1,7 +1,7 @@
 (function($) {
 
   $('#reset').on('click', function(){
-      $('#register-form').reset();
+      $('#bootstrapForm').reset();
   });
 
 })(jQuery);
