@@ -24,211 +24,217 @@
  
    <!--Google FOnts-->
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&display=swap" rel="stylesheet">
-	
-    <link rel="stylesheet" href="style.css" />
+    
+    <!-- CSS FILE -->	  
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Departments</title>
 	<style>
 	
 	@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
 
+			body {
+			  background-image: url('./images/bg2.jpg'); 
+			  font-family: "Oswald", sans-serif;
+			  font-family: "Ubuntu", sans-serif;
+			  color: white;
+			  overflow-x: hidden;
 
-.container-faq{
-  margin: 0 auto;
-  padding: 4rem;
-  width: 85%;
-}
+			}
+			.container-faq{
+			  margin: 0 auto;
+			  padding: 4rem;
+			  width: 85%;
+			}
 
-.accordion .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
-}
+			.accordion .accordion-item {
+			  border-bottom: 1px solid #e5e5e5;
+			}
 
-.accordion .accordion-item button[aria-expanded='true'] {
-  border-bottom: 1px solid #e32d05;
-}
+			.accordion .accordion-item button[aria-expanded='true'] {
+			  border-bottom: 1px solid #e32d05;
+			}
 
-.accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  color: white;
-  font-size: 20px;
-  
-  border: none;
-  background: none;
-  outline: none;
-}
+			.accordion button {
+			  position: relative;
+			  display: block;
+			  text-align: left;
+			  width: 100%;
+			  padding: 1em 0;
+			  color: white;
+			  font-size: 20px;
+			  
+			  border: none;
+			  background: none;
+			  outline: none;
+			}
 
-.accordion button:hover,
-.accordion button:focus {
-  cursor: pointer;
-  color: #e32d05;
-}
+			.accordion button:hover,
+			.accordion button:focus {
+			  cursor: pointer;
+			  color: #e32d05;
+			}
 
-.accordion button:hover::after,
-.accordion button:focus::after {
-  cursor: pointer;
-  color: #e32d05;
-  border: 1px solid white;
-}
+			.accordion button:hover::after,
+			.accordion button:focus::after {
+			  cursor: pointer;
+			  color: #e32d05;
+			  border: 1px solid white;
+			}
 
-.accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
-}
+			.accordion button .accordion-title {
+			  padding: 1em 1.5em 1em 0;
+			}
 
-.accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-}
+			.accordion button .icon {
+			  display: inline-block;
+			  position: absolute;
+			  top: 18px;
+			  right: 0;
+			  width: 22px;
+			  height: 22px;
+			  border: 1px solid;
+			  border-radius: 22px;
+			}
 
-.accordion button .icon::before {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
-  background: currentColor;
-}
-.accordion button .icon::after {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-}
+			.accordion button .icon::before {
+			  display: block;
+			  position: absolute;
+			  content: '';
+			  top: 9px;
+			  left: 5px;
+			  width: 10px;
+			  height: 2px;
+			  background: currentColor;
+			}
+			.accordion button .icon::after {
+			  display: block;
+			  position: absolute;
+			  content: '';
+			  top: 5px;
+			  left: 9px;
+			  width: 2px;
+			  height: 10px;
+			  background: currentColor;
+			}
 
-.accordion button[aria-expanded='true'] {
-  color: #e32d05;
-}
-.accordion button[aria-expanded='true'] .icon::after {
-  width: 0;
-}
-.accordion button[aria-expanded='true'] + .accordion-content {
-  opacity: 1;
-  max-height: 9em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-.accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-.accordion .accordion-content p {
-  font-size: 2rem;
-  
-  margin: 2em 0;
-}
+			.accordion button[aria-expanded='true'] {
+			  color: #e32d05;
+			}
+			.accordion button[aria-expanded='true'] .icon::after {
+			  width: 0;
+			}
+			.accordion button[aria-expanded='true'] + .accordion-content {
+			  opacity: 1;
+			  max-height: 9em;
+			  transition: all 200ms linear;
+			  will-change: opacity, max-height;
+			}
+			.accordion .accordion-content {
+			  opacity: 0;
+			  max-height: 0;
+			  overflow: hidden;
+			  transition: opacity 200ms linear, max-height 200ms linear;
+			  will-change: opacity, max-height;
+			}
+			.accordion .accordion-content p {
+			  font-size: 2rem;
+			  
+			  margin: 2em 0;
+			}
 
 
+				
+				.title {
+			 
+				margin-bottom: 50px;
+				text-transform: uppercase;
+			}
+
+			.card-block {
+				
+				position: relative;
+				margin: 0;
+				padding: 1em;
+				border: none;
+				border-top: 1px solid rgba(34, 36, 38, .1);
+				box-shadow: none;
+				color:black;
+			  
+			}
+			.card {
+				font-size: 1.2em;
+				overflow: hidden;
+				padding: 5;
+				border: none;
+				border-radius: .7rem;
+				box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+				margin-top:20px;
+				background-color:grey;
+			}
+
+			.carousel-indicators li {
+				border-radius: 12px;
+				width: 12px;
+				height: 12px;
+				background-color: #404040;
+			}
+			.carousel-indicators li {
+				border-radius: 12px;
+				width: 12px;
+				height: 12px;
+				background-color: #404040;
+			}
+			.carousel-indicators .active {
+				background-color: white;
+				max-width: 12px;
+				margin: 0 3px;
+				height: 12px;
+			}
+			.carousel-control-prev-icon {
+			 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+			}
+
+			.carousel-control-next-icon {
+			  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+			}
+			.btn {
+			  margin-top: auto;
+			}
+				
+			.picture-frame {
+				  
+				  width: 60%;
+				  height:110%;
+				  border:grey solid 15px;
+				  -webkit-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+				  -moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+				  box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+				  
+			}
+				
+				
+			.art {
+				  width:90%;
+				  margin-top:30px;
+			}
+
+
+
+
+			.lead-content{
+			font-size: 1.2em;
+			margin-bottom: 1.3em;
+			line-height: 1.618;
+			}
 	
-	.title {
- 
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-.card-block {
-    
-    position: relative;
-    margin: 0;
-    padding: 1em;
-    border: none;
-    border-top: 1px solid rgba(34, 36, 38, .1);
-    box-shadow: none;
-	color:black;
-  
-}
-.card {
-    font-size: 1.2em;
-    overflow: hidden;
-    padding: 5;
-    border: none;
-    border-radius: .7rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    margin-top:20px;
-	background-color:grey;
-}
-
-.carousel-indicators li {
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #404040;
-}
-.carousel-indicators li {
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #404040;
-}
-.carousel-indicators .active {
-    background-color: white;
-    max-width: 12px;
-    margin: 0 3px;
-    height: 12px;
-}
-.carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-.btn {
-  margin-top: auto;
-}
-	
-	.picture-frame {
-	  
-	  width: 60%;
-	  height:110%;
-	  border:grey solid 15px;
-	  -webkit-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
-	  -moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
-	  box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
-	  
-	}
-	
-	
-	.art {
-	  width:90%;
-	  margin-top:30px;
-	}
-
-
-
-
-.lead-content{
-font-size: 1.2em;
-
-
-margin-bottom: 1.3em;
-  line-height: 1.618;
-}
-	
-	.a{
-		background-color: #0000009c;
-		}
-		.mbl_logo{
+			.a{
+			background-color: #0000009c;
+			}
+			.mbl_logo{
 			display:none;
-		}
-		@media(max-width:400px){
+			}
+			@media(max-width:400px){
 			.mbl_logo{
 				    display: block;
 
@@ -236,8 +242,8 @@ margin-bottom: 1.3em;
 				    .desk_logo{
 				    	display:none;
 				    }
-				}
-				.mtop{
+			}
+			.mtop{
 				margin-top: 30px;
                 margin-bottom: 100px;
 			}
@@ -276,168 +282,170 @@ margin-bottom: 1.3em;
 			padding-left:30%;
 			}
 			.button_apply {
-  border-radius: 4px;
-  background-color: red;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 22px;
-  padding: 20px;
-  width: 240px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+			  border-radius: 4px;
+			  background-color: red;
+			  border: none;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 22px;
+			  padding: 20px;
+			  width: 240px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			}
 
-.button_apply span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+			.button_apply span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
 
-.button_apply span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+			.button_apply span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
 
-.button_apply:hover span {
-  padding-right: 25px;
-}
+			.button_apply:hover span {
+			  padding-right: 25px;
+			}
 
-.button_apply:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+			.button_apply:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
 
-.nav-container .hamburger{
-  display:none;
-  visibility: collapse;
-  width: fit-content;
-  font-size : 30px;
-  position: absolute;
-  top : 30px;
-  right : 30px;
-  cursor: pointer;
-}
-.nav-container .hamburger .icon{
-  transform: rotate(90deg);
-  color: white;
-  width: fit-content;
-}
-.nav-container .close{
-  font-size : 25px;
-  color : white;
-  position : absolute;
-  top : 20px;
-  right : 30px;
-  display : none;
-  visibility: collapse;
-  cursor: pointer;
-  z-index : 3;
-  color : rgb(66, 66, 66);
-}
-.nav-container .close:hover{
-  color : #DC2626;
-}
+			.nav-container .hamburger{
+			  display:none;
+			  visibility: collapse;
+			  width: fit-content;
+			  font-size : 30px;
+			  position: absolute;
+			  top : 30px;
+			  right : 30px;
+			  cursor: pointer;
+			}
+			.nav-container .hamburger .icon{
+			  transform: rotate(90deg);
+			  color: white;
+			  width: fit-content;
+			}
+			.nav-container .close{
+			  font-size : 25px;
+			  color : white;
+			  position : absolute;
+			  top : 20px;
+			  right : 30px;
+			  display : none;
+			  visibility: collapse;
+			  cursor: pointer;
+			  z-index : 3;
+			  color : rgb(66, 66, 66);
+			}
+			.nav-container .close:hover{
+			  color : #DC2626;
+			}
 
 
-  @media (max-width: 992px){
+			  @media (max-width: 992px){
 
-  /* Nav */
-  .nav-container ul li {
-    margin: 0 5px;
-    font-size: 15px;
-    border: 1.5px solid rgba(248, 248, 4, 0);
-    padding: 10px 10px;
-  }
-  .nav-container .title{
-    margin : 0 30px;
-  }
-  .nav-container ul {
-    list-style: none;
-    display : block;
-    z-index: 3;
-    position : absolute;
-    width : 100%;
-    top:0;
-    background-color: white;
-    padding-top : 50px;
-    padding-bottom : 30px;
-    display : none; 
-    visibility: collapse;
-  }
-  .nav-container ul li{
-    text-align: center;
-    border : none;
-  }
-  .nav-container ul li a{
-    color : rgb(66, 66, 66);
-    font-weight:700;
-  }
-  .nav-container ul li:hover{
-    border : none;
-    background-color: var(--yellow);
-  }
-  .nav-container ul li a:hover{
-    border-bottom : 2px solid rgb(114, 109, 109);
-  }
-  .nav-container .hamburger{
-    display : block;
-    visibility: visible;
-  }}
-  @media (max-width: 576px){
+			  /* Nav */
+			  .nav-container ul li {
+				margin: 0 5px;
+				font-size: 15px;
+				border: 1.5px solid rgba(248, 248, 4, 0);
+				padding: 10px 10px;
+			  }
+			  .nav-container .title{
+				margin : 0 30px;
+			  }
+			  .nav-container ul {
+				list-style: none;
+				display : block;
+				z-index: 3;
+				position : absolute;
+				width : 100%;
+				top:0;
+				background-color: white;
+				padding-top : 50px;
+				padding-bottom : 30px;
+				display : none; 
+				visibility: collapse;
+			  }
+			  .nav-container ul li{
+				text-align: center;
+				border : none;
+			  }
+			  .nav-container ul li a{
+				color : rgb(66, 66, 66);
+				font-weight:700;
+			  }
+			  .nav-container ul li:hover{
+				border : none;
+				background-color: var(--yellow);
+			  }
+			  .nav-container ul li a:hover{
+				border-bottom : 2px solid rgb(114, 109, 109);
+			  }
+			  .nav-container .hamburger{
+				display : block;
+				visibility: visible;
+			  }}
+			  @media (max-width: 576px){
 
-  /* Main-section */
-  .main-section{
-    text-align: center;
-  }
-  .main-section .flex{
-    justify-content: center;
-  }
-  .subheading{
-    margin: 1px;
-  }
+			  /* Main-section */
+			  .main-section{
+				text-align: center;
+			  }
+			  .main-section .flex{
+				justify-content: center;
+			  }
+			  .subheading{
+				margin: 1px;
+			  }
 
-  /* Carousel */
-  .caroussel-container {
-    overflow: hidden;
-    height: 750px;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-  }
-  .image {
-    display: inline-flex;
-    flex-direction: column;
-    margin: auto;
-    position: relative;
-    height: 750px;
-  }
-  .image img {
-    height: 750px;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 750px;
-    background-color: rgba(0, 0, 0, 0.541);
-    z-index: 0;
-  }
-  .main-section {
-    height: 545px;
-  }}
-  
+			  /* Carousel */
+			  .caroussel-container {
+				overflow: hidden;
+				height: 750px;
+				width: 100%;
+				margin: auto;
+				position: absolute;
+			  }
+			  .image {
+				display: inline-flex;
+				flex-direction: column;
+				margin: auto;
+				position: relative;
+				height: 750px;
+			  }
+			  .image img {
+				height: 750px;
+			  }
+			  .overlay {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 750px;
+				background-color: rgba(0, 0, 0, 0.541);
+				z-index: 0;
+			  }
+			  .main-section {
+				height: 545px;
+			  }}
+			  
 
 
 			</style>
   </head>
   <body>
+  
+	
   
     <div class="caroussel-container">
       <div class="caroussel">
@@ -521,7 +529,7 @@ margin-bottom: 1.3em;
           <span>
             Be a Part of this Magical Journey..
           </span>
-          <br /><br />Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the Wizarding World
+          <br /><br />Established around the 10th century, Hogwarts is considered to</br> be one of the finest magical institutions in the Wizarding World
         </p>
         <div class="btn-container">
           <button type="button" class="primary-btn btn"><a href="#videos">EXPLORE MORE</a></button>
