@@ -1307,7 +1307,6 @@ input::placeholder, textarea::placeholder{
     margin-bottom: 30px;
 }
 
-
 /* ---------------------------------------------------------Footer------------------------------------------------------------ */
 
 .footer-section ul {
@@ -1423,6 +1422,7 @@ color: #ff2414;
 .footer-widget ul li a {
 color: #878787;
 text-transform: capitalize;
+font-size: 16px;
 }
 .subscribe-form {
 position: relative;
@@ -1431,9 +1431,11 @@ overflow: hidden;
 .subscribe-form input {
 width: 100%;
 padding: 14px 28px;
+height: 25%;
 background: #2E2E2E;
 border: 1px solid #2E2E2E;
 color: #fff;
+font-size: 17px;
 }
 .subscribe-form button {
   position: absolute;
@@ -1450,10 +1452,7 @@ transform: rotate(-6deg);
 }
 .copyright-area{
 background: #202020;
-height: 50px;
-overflow-y: hidden;
-margin-top: 0%;
-
+padding: 25px 0;
 }
 .copyright-text p {
 margin: 0;
@@ -1475,7 +1474,6 @@ color: #ff5e14;
 font-size: 14px;
 color: #878787;
 }
-
 
 /*  ----------------------------------------------------RESPONSIVE LAYOUT CODE----------------------------------------------   */
 
